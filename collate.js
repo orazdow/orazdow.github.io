@@ -30,19 +30,22 @@ readdirAsync('./posts').then((files)=>{
 	posts.forEach((el)=>{
 
 	let str = el.substr(0, el.lastIndexOf('.'));
-	let rmgroup = el.substr(0, el.lastIndexOf('-'));
+	let _min = str.includes('.min');
+	if(_min) str = str.replace(/(.min)/, '');
+	let _static = str.includes('.static');
+	if(_static) str = str.replace(/(.static)/, '');
 
 		let entry = {
 			filename: el,
-			date:  str.substr(0, rmgroup.lastIndexOf('-')),
-			title: rmgroup.substr(rmgroup.lastIndexOf('-')+1),
+			date:  str.substr(0, 10).replace(/[-]/g, '/'),
+			title: str.substr(0, str.lastIndexOf('-')).substr(11),
 			description: "",
 			content: "",
 			group: str.substr(str.lastIndexOf('-')+1),
 			categories: [],
 			display: true,
-			minimize: false,
-			static: false
+			minimize: _min,
+			static: _static
 		};
 		
 	    console.log(entry);

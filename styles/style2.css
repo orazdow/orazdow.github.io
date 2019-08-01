@@ -1,4 +1,7 @@
 
+body,.container.main_div{
+    /*background-color: #fafafa;*/
+}
 
 li{
     list-style: none;
@@ -12,16 +15,42 @@ li{
     padding: 10px;
 }
 
+header.masthead{
+    margin-bottom: 40px;
+}
 
 ul{
     padding: 0px;
 }
 
+.min-heading{
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.min-desc{
+    margin: 0px;
+    margin-top: 3px;
+    color: #505050;
+}
+.min-date{
+    margin: 0px;
+    margin-top: 3px;
+    color: #505050;
+}
+.post-min{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 7px; 
+}
+.post-min:hover{
+    cursor: pointer;
+}
+
 .main_div{
 
-    max-width: 52rem;
+    max-width: 51rem;
     /*max-width: 50%;*/
-    margin-left: 26.5%;
+    margin-left: 26%;
    /* margin-left: 23%;*/
     padding: 21px;
     z-index: 1;

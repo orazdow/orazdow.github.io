@@ -28,10 +28,14 @@ class Post extends Component{
     }
 
     render(){
-        if(this.state.expand){
+        if(this.state.expand || this.props.entry.static){
             return <li className="post" onClick={clickPosts ? this.handleClick : null}><ReactMarkdown source={this.props.entry.content} /></li>;
         }else{
-            return <li className="post" onClick={clickPosts ? this.handleClick : null}>minimized</li>;
+            return(<li className="post post-min" onClick={clickPosts ? this.handleClick : null}>
+            <h5 className="min-heading">{this.props.entry.title}</h5>  
+            <p className="min-desc">{this.props.entry.description}</p> 
+            <p className="min-date"><small>{this.props.entry.date}</small></p>      
+            </li>);
         }
 
     }
