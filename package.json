@@ -6,7 +6,8 @@
   "scripts": {
     "build": "browserify --debug index.js -o public/bundle.js",
     "watch": "rum public public/bundle.js -p 8000 --  --debug index.js",
-    "collate": "node collate.js main projects about"
+    "collate": "node collate.js main projects about",
+    "prod": "browserify index.js -o public/bundle.js && uglifyjs public/bundle.js -o public/bundle.js"
   },
   "keywords": [],
   "author": "",
