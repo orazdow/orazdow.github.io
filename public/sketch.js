@@ -1,6 +1,9 @@
 
-let disp, disp2, disp3, disp4;
+const runAnimation = true;
+let disp, disp2, mouseX, mouseY;
 let size = 100;
+var runID;
+var running = runAnimation;
 
 window.onload = ()=>{
 	disp = document.querySelector('#disp'); 
@@ -13,6 +16,10 @@ window.onload = ()=>{
 		mouseX = event.clientX;
 		mouseY = event.clientY;
 	}
+
+	if(runAnimation){
+	runID = window.setInterval(run, 20);
+}
 }
 
 
@@ -53,7 +60,20 @@ rotation.transformation(yrotation);
 let f = 1.1;
 let f2 = 1.2;
 
-window.setInterval(run, 20);
+
+
+function startAnim(){
+	if(!running){
+		runID = window.setInterval(run, 20);
+		running = true;
+	}
+}
+
+function stopAnim(){
+	clearInterval(runID);
+	running = false;
+}
+
 
 function run(){
 	f = (mouseX/innerWidth)*2; 
@@ -77,7 +97,7 @@ function ascii(){
 		for(let _x = 0; _x < 60; _x++){
 
 			let y = _y-15;		
-			let x = _x-20;
+			let x = _x-25;
 
 		  	let drawpt = 0;
 
@@ -97,7 +117,7 @@ function ascii(){
 
 		}
 		str += '\n';
-	}  disp.innerHTML = str; disp2.innerHTML = str; disp3.innerHTML = str; disp4.innerHTML = str; 
+	}  disp.innerHTML = str; disp2.innerHTML = str; 
 }
 
 //check point with cross product

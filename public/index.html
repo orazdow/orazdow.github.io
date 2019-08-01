@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>react test</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<style type="text/css">
+.anim{
+	width: 80px;
+	position: absolute;
+	z-index: -1;	
+}
+
+#anim{
+	/*left: 6%;*/
+}
+#anim_r{
+	left: 76%;
+	transform: translateX(-100%);
+}
+
+</style>
+</head>
+<body>
+<div class="anim" id="anim">
+<pre id="disp"  spellcheck="false"></pre>	
+<!-- <pre id="disp3"  spellcheck="false"></pre> -->
+</div>
+<div class="anim" id="anim_r">
+<pre id="disp2"  spellcheck="false"></pre>	
+<!-- <pre id="disp4"  spellcheck="false"></pre> -->
+</div>
+<div id="root"></div>
+<script src="bundle.js"></script>
+<script src="matrix.js"></script>
+<script src="sketch.js"></script>
+</body>
+</html>

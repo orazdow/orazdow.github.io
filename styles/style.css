@@ -1,13 +1,14 @@
 /*#a123fe;*/
 html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
+
 }
 
 body {
-  color: #515151;
+  /*font-size: 20px;*/
+  line-height: 1.5;
+  color: #000000;
   background-color: #fff;
+  font-family: Helvetica,Arial,sans-serif;
 }
 
 a {
@@ -17,15 +18,22 @@ a {
 a strong {
   color: inherit;
 }
-a:hover, a:focus {
+
+a:hover{
   text-decoration: underline;
 }
-
+/*a:focus {
+  text-decoration: none;
+}
+a:active{
+  text-decoration: underline;
+}
+*/
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: #000000;
   text-rendering: optimizeLegibility;
 }
 
@@ -72,27 +80,28 @@ dd {
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 }
 
 code {
   padding: .25em .5em;
   font-size: 85%;
+  background-color: #f9f9f9;
 }
 
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
   font-size: .8rem;
-  line-height: 1.4;
-  background-color: #f9f9f9;
+  /*line-height: 1.4;*/
+/*  background-color: #f9f9f9;*/
 }
 pre code {
   padding: 0;
   font-size: 100%;
   color: inherit;
-  background-color: transparent;
+  
 }
 
 blockquote {
@@ -126,9 +135,9 @@ table tr:nth-child(odd) th {
 }
 
 .container {
-  max-width: 38rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+ /* max-width: 38rem;*/
+/*  padding-left: 1rem;
+  padding-right: 1rem;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -142,14 +151,17 @@ table tr:nth-child(odd) th {
 .masthead .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  /*color: #000000;*/
+  color: #505050;  
   font-size: 24px;
 }
 .masthead .masthead-title a {
   color: #505050;
+ /* color: #000000;*/
 }
 .masthead .masthead-title small {
-  color: #C0C0C0;
+  /*color: #c0c0c0;*/
+  color: #000000;
   font-size: 75%;
   font-weight: 400;
   letter-spacing: 0;
