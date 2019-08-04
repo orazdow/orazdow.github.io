@@ -30,7 +30,8 @@ function MenuSub(props){
 		</small>
 	);
 }
-
+//className="fa fa-github"
+//className="fa gh"
 function MenuGh(props){
 	return(
 		<small>

@@ -59,19 +59,19 @@ ul{
 
 }
 
-/*.gh:before{
+/* svg backup for menu class: fa gh; */
+.gh:before{
     font-size: 24px;
     color: black;
     content: ' ';
     display: inline-block;
-    background-size: 21px 21px;
+    background-size: 22px 22px;
     margin: 0px;
-    background-image: url('github.svg');
-    width: 21px;
-    height: 21px;
-    -webkit-font-smoothing: antialiased;
+    background-image: url('img/github.svg');
+    width: 22px;
+    height: 22px;
 }
-*/
+
 .anim pre{
     font-size:16px;
     color: #515151;
