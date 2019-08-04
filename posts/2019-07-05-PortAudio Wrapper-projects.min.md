@@ -61,7 +61,6 @@ The 2-argument constructor is equivalent to:
 
 `Pa a(callback, 0, 1, 44100, 0, &data);` 
 
-<br>
 
 **Starting / stopping the audio stream:**
 
@@ -79,7 +78,6 @@ For convenience, there are four  enum values that can be passed  to `start()` to
 
 PortAudio will be terminated when the wrapper object is destroyed, but can be explicitly terminated by calling `terminate()`
 
-<br>
 
 **Passing data:**
 
@@ -119,7 +117,6 @@ Alternatively, you can pass the data as a shared_ptr, which will delete resource
     Osc* osc = new Osc(440);
     Pa a(paFunc, std::shared_ptr<Osc>(osc));
 
-<br>
 
 **Querying / setting audio devices:**
 

@@ -107,10 +107,19 @@ class Matrix{
 
 	multiply(m){ 
 		let n = [];
-		if(m instanceof Array){ // < columns not precomputed
-			if(this.c != m.length){console.log('incorrect dimensions:', this.c, '!=', m.length); return null;}
-
-			this.tcols = [];	
+		if(m.r){  
+			//if Matrix obj:
+			for (let i = 0; i < this.r; i++) {
+					n.push([]);
+				for (let j = 0; j < m.c; j++) {
+					n[i][j] = this.dot(this.rows[i], m.cols[j]);
+					this.tcols[j][i] = n[i][j];
+				}
+			}
+			return n;
+		}
+		// if row: array (cols not precomputed)
+		this.tcols = [];	
 		for (let i = 0; i < m[0].length; i++) {
 				this.tcols.push([]);
 			  for (let j = 0; j < m.length; j++) {
@@ -118,56 +127,44 @@ class Matrix{
 			  }
 		}
 
-			for (let i = 0; i < this.r; i++) {
-				n.push([]);
-				for (let j = 0; j < m[0].length; j++) {
-					n[i][j] = this.dot(this.rows[i], this.tcols[j]);
-					this.tcols[j][i] = n[i][j];
-				}
-			 }	
-			return n;
-		}
-		//if Matrix obj
-		if(this.c != m.r){console.log('incorrect dimensions:', this.c, '!=', m.r); return null;}
-
 		for (let i = 0; i < this.r; i++) {
-				n.push([]);
-			for (let j = 0; j < m.c; j++) {
-				n[i][j] = this.dot(this.rows[i], m.cols[j]);
+			n.push([]);
+			for (let j = 0; j < m[0].length; j++) {
+				n[i][j] = this.dot(this.rows[i], this.tcols[j]);
 				this.tcols[j][i] = n[i][j];
 			}
-		}
-		return n;
+		 }	
+		return n;		
+
 	}
 
 	leftMultiply(m, save){ 
 		let n = [], cols = [];
-		if(m instanceof Array){ 
-			if(m[0].length != this.r){console.log('incorrect dimensions:', m[0].length, '!=', this.r); return null;}
+		if(m.r){  
+			// if Matrix obj
 			for(let i = 0; i < this.c; i++){cols.push([]);}
 
-			for (let i = 0; i < m.length; i++) {
+			for(let i = 0; i < m.r; i++) {
 					n.push([]);
 				for (let j = 0; j < this.c; j++) {
-					n[i][j] = this.chain ? this.dot(m[i], this.tcols[j]) : this.dot(m[i], this.cols[j]);
+					n[i][j] = this.chain ? this.dot(m.rows[i], this.tcols[j]) : this.dot(m.rows[i], this.cols[j]);
 					cols[j][i] = n[i][j];
 				}
-			}	
+			}
 			this.tcols = cols;
 			if(save){this.rows = n; this.cols = cols;}
 			return n;
 		}
-		// if Matrix obj
-		if(m.c != this.r){console.log('incorrect dimensions:', m.c, '!=', this.r); return null;}
+		// if row array
 		for(let i = 0; i < this.c; i++){cols.push([]);}
 
-		for(let i = 0; i < m.r; i++) {
+		for (let i = 0; i < m.length; i++) {
 				n.push([]);
 			for (let j = 0; j < this.c; j++) {
-				n[i][j] = this.chain ? this.dot(m.rows[i], this.tcols[j]) : this.dot(m.rows[i], this.cols[j]);
+				n[i][j] = this.chain ? this.dot(m[i], this.tcols[j]) : this.dot(m[i], this.cols[j]);
 				cols[j][i] = n[i][j];
 			}
-		}
+		}	
 		this.tcols = cols;
 		if(save){this.rows = n; this.cols = cols;}
 		return n;
@@ -204,11 +201,7 @@ class Matrix{
 	}
 
 	dot(a1,a2){
-		let p = 0;
-		a1.forEach((el,i)=>{
-			p += el * a2[i];
-		});
-		return p;
+		return a1[0]*a2[0] + a1[1]*a2[1] + a1[2]*a2[2] + a1[3]*a2[3];
 	}
 
 }

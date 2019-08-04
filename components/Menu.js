@@ -30,12 +30,11 @@ function MenuSub(props){
 		</small>
 	);
 }
-//className="fa fa-github"
-//className="fa gh"
+//className "fa fa-github"  "fa gh"
 function MenuGh(props){
 	return(
 		<small>
-		 <a className="fa fa-github" style={ghStyle}  href="https://www.github.com/orazdow"></a>
+		 <a className="fa fa-github" id="ghbutton" style={ghStyle}  href="https://www.github.com/orazdow"></a>
 		</small>
 	);
 }

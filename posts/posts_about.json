@@ -1,6 +1,6 @@
 [
 	{
-		"filename": "2019-07-24-med-about.min.md",
+		"filename": "2019-07-24-med-about.md",
 		"date": "2019/07/24",
 		"title": "med",
 		"description": "",
@@ -8,7 +8,7 @@
 		"group": "about",
 		"categories": [],
 		"display": true,
-		"minimize": true,
+		"minimize": false,
 		"static": false
 	}
 ]
