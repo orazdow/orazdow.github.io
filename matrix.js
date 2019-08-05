@@ -108,7 +108,7 @@ class Matrix{
 	multiply(m){ 
 		let n = [];
 		if(m instanceof Array){ // < columns not precomputed
-			if(this.c != m.length){console.log('incorrect dimensions:', this.c, '!=', m.length); return null;}
+			//if(this.c != m.length){console.log('incorrect dimensions:', this.c, '!=', m.length); return null;}
 
 			this.tcols = [];	
 		for (let i = 0; i < m[0].length; i++) {
@@ -128,7 +128,7 @@ class Matrix{
 			return n;
 		}
 		//if Matrix obj
-		if(this.c != m.r){console.log('incorrect dimensions:', this.c, '!=', m.r); return null;}
+		//if(this.c != m.r){console.log('incorrect dimensions:', this.c, '!=', m.r); return null;}
 
 		for (let i = 0; i < this.r; i++) {
 				n.push([]);
@@ -143,7 +143,7 @@ class Matrix{
 	leftMultiply(m, save){ 
 		let n = [], cols = [];
 		if(m instanceof Array){ 
-			if(m[0].length != this.r){console.log('incorrect dimensions:', m[0].length, '!=', this.r); return null;}
+			//if(m[0].length != this.r){console.log('incorrect dimensions:', m[0].length, '!=', this.r); return null;}
 			for(let i = 0; i < this.c; i++){cols.push([]);}
 
 			for (let i = 0; i < m.length; i++) {
@@ -158,7 +158,7 @@ class Matrix{
 			return n;
 		}
 		// if Matrix obj
-		if(m.c != this.r){console.log('incorrect dimensions:', m.c, '!=', this.r); return null;}
+		//if(m.c != this.r){console.log('incorrect dimensions:', m.c, '!=', this.r); return null;}
 		for(let i = 0; i < this.c; i++){cols.push([]);}
 
 		for(let i = 0; i < m.r; i++) {
@@ -205,9 +205,11 @@ class Matrix{
 
 	dot(a1,a2){
 		let p = 0;
-		a1.forEach((el,i)=>{
-			p += el * a2[i];
-		});
+
+		for(var i = 0; i < 4; i++){
+			p += a1[i]*a2[i];
+		}
+
 		return p;
 	}
 

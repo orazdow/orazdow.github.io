@@ -61,7 +61,6 @@ let f = 1.1;
 let f2 = 1.2;
 
 
-
 function startAnim(){
 	if(!running){
 		runID = window.setInterval(run, 20);
@@ -78,7 +77,7 @@ function stopAnim(){
 function run(){
 	f = (mouseX/innerWidth)*2; 
 	f2 = (mouseY/innerHeight)*2; 
-
+	
 	m.transformation(rotation);
 //	m.startChain();
     m.leftMultiply([[f, 0, 0, 1], [0, f2, 0, 1], [0, 0, 1, 1], [0,0,0,1]]); 
