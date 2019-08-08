@@ -17,7 +17,7 @@ li{
 
 header.masthead{
 /*    margin-bottom: 40px;*/
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 
 ul{
@@ -41,7 +41,7 @@ ul{
 .post-min{
     padding-bottom: 5px;
     padding-top: 5px;
-    margin: 7px; 
+    /*margin: 7px;*/ 
 }
 .post-min:hover{
     cursor: pointer;
@@ -51,7 +51,7 @@ ul{
 
     max-width: 51rem;
     /*max-width: 50%;*/
-    margin-left: 29%;
+    margin-left: 28.5%;
     margin-right: 30%;
     padding: 21px;
     z-index: 1;
