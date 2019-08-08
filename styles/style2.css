@@ -16,7 +16,8 @@ li{
 }
 
 header.masthead{
-    margin-bottom: 40px;
+/*    margin-bottom: 40px;*/
+    margin-bottom: 5%;
 }
 
 ul{
@@ -50,8 +51,8 @@ ul{
 
     max-width: 51rem;
     /*max-width: 50%;*/
-    margin-left: 26%;
-   /* margin-left: 23%;*/
+    margin-left: 29%;
+    margin-right: 30%;
     padding: 21px;
     z-index: 1;
     background: #ffffff;
@@ -94,16 +95,26 @@ ul{
       padding: 1rem;
 }
 
+.anim{
+    width: 80px;
+    position: absolute;
+    z-index: -1;    
+}
+
+#anim{
+    /*left: 6%;*/
+}
+#anim_r{
+    left: 76%;
+    transform: translateX(-100%);
+}
 
 @media screen and (max-width: 700px) {
 
     .main_div{
 
-        /*max-width: 70rem;*/
-        max-width: 70%;
-        margin: 0 auto;
-/*        margin-left: 0px;
-        margin-right: 0px;*/
+        max-width: 80%;
+        margin: 0 auto;/
         /*padding: 21px;*/
         z-index: 1;
         background: #ffffff;
