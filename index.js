@@ -4,7 +4,11 @@ import ReactDOM from 'react-dom';
 import {App} from './components/App';
 
 
-if(window.devicePixelRatio > 1 && window.devicePixelRatio < 1.5){
+// if(window.devicePixelRatio > 1 && (window.devicePixelRatio/.25)%1 == 0){
+// 	document.documentElement.style.transform = 'scale('+(1/window.devicePixelRatio)+')';
+// 	document.documentElement.style.transformOrigin = 'top';
+// }
+if(window.devicePixelRatio == 1.25 || window.devicePixelRatio == 1.5){
 	document.documentElement.style.transform = 'scale('+(1/window.devicePixelRatio)+')';
 	document.documentElement.style.transformOrigin = 'top';
 }
