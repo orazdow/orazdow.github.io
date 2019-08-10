@@ -29,7 +29,7 @@ class Post extends Component{
 
     render(){
         if(this.state.expand || this.props.entry.static){
-            return <li className="post" onClick={clickPosts ? this.handleClick : null}><ReactMarkdown source={this.props.entry.content} /></li>;
+            return <li className="post post-max" onClick={clickPosts ? this.handleClick : null}><ReactMarkdown source={this.props.entry.content} /></li>;
         }else{
             return(<li className="post post-min" onClick={clickPosts ? this.handleClick : null}>
             <h5 className="min-heading">{this.props.entry.title}</h5>  

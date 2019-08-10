@@ -8,13 +8,6 @@ li{
      /*padding-right: 100px;*/
 }
 
-.post{ 
-    border: 1px solid black;
-    border-style: none none dotted;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
 header.masthead{
 /*    margin-bottom: 40px;*/
     margin-bottom: 6%;
@@ -38,6 +31,14 @@ ul{
     margin-top: 3px;
     color: #505050;
 }
+
+.post{ 
+    border: 1px solid black;
+    border-style: none none dotted;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .post-min{
     padding-bottom: 5px;
     padding-top: 5px;
@@ -109,12 +110,113 @@ ul{
     transform: translateX(-100%);
 }
 
+.min-heading{
+    font-size: 1em;
+}
+li.post-max{
+    padding: 5px;
+}
+header.masthead{
+   /* margin-bottom: 0px;*/
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 1.25)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 1.25/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 1.25)      and (min-width: 700px){ 
+
+    .container.main_div{
+        max-width: 50rem;
+        margin-left: 21%;
+        margin-right: 22%;
+        padding: 21px;
+        z-index: 1;
+        background: #ffffff;
+        font-size: 16px;
+        transform: scale(0.75);
+        transform-origin: top center;
+    }
+
+    .post{
+       
+    }
+     .post-max p{
+        font-size: 1em;
+    }
+    .min-heading{
+        font-size: 1.1em;
+    }
+    li.post-max{
+        padding: 6px;
+    }
+
+    .masthead a{
+       /* font-size: 1.1em;*/
+    }
+
+    #disp, #disp2{
+        transform: scale(0.75);
+        transform-origin: top center;
+    }
+    #anim pre{
+    }
+    #anim_r pre{
+        left: 76%;
+
+    }
+    #anim_r{
+        transform: translateX(-100%);
+    }
+
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 1.5)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 1.5/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px){ 
+
+
+    .container.main_div{
+        max-width: 55rem;
+        margin-left: 20%;
+        margin-right: 22%;
+        padding: 8px;
+        z-index: 1;
+        background: #ffffff;
+        transform: scale(0.67);
+        transform-origin: top ;
+    }
+    .post-max p{
+       /* font-size: 1em;*/
+    }
+    header.masthead{
+       /* margin-bottom: 0px;*/
+    }
+    #disp, #disp2{
+        transform: scale(0.67);
+        transform-origin: top center;
+    }
+    #anim pre{
+    }
+    #anim_r pre{
+        left: 76%;
+
+    }
+    #anim_r{
+        transform: translateX(-100%);
+    }
+
+}
+
 @media screen and (max-width: 700px) {
 
     .main_div{
 
         max-width: 80%;
-        margin: 0 auto;/
+        margin: 0 auto;
         /*padding: 21px;*/
         z-index: 1;
         background: #ffffff;

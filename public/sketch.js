@@ -13,8 +13,8 @@ window.onload = ()=>{
 	mouseX = 1000;
 	mouseY = 500;
 	window.onmousemove = function(event){
-		mouseX = event.clientX+200;
-		mouseY = event.clientY+100;
+		mouseX = event.clientX;//+200;
+		mouseY = event.clientY;//+100;
 	}
 
 	if(runAnimation){
