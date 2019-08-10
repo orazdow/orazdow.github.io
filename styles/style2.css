@@ -121,10 +121,10 @@ header.masthead{
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 1.25)      and (min-width: 700px),
-only screen and (   min--moz-device-pixel-ratio: 1.25)      and (min-width: 700px),
-only screen and (     -o-min-device-pixel-ratio: 1.25/1)    and (min-width: 700px),
-only screen and (        min-device-pixel-ratio: 1.25)      and (min-width: 700px){ 
+only screen and (-webkit-min-device-pixel-ratio: 1.25)      and (min-width: 700px)  and (max-width: 2000px),
+only screen and (   min--moz-device-pixel-ratio: 1.25)      and (min-width: 700px)  and (max-width: 2000px),
+only screen and (     -o-min-device-pixel-ratio: 1.25/1)    and (min-width: 700px)  and (max-width: 2000px),
+only screen and (        min-device-pixel-ratio: 1.25)      and (min-width: 700px)  and (max-width: 2000px){ 
 
     .container.main_div{
         max-width: 50rem;
@@ -173,10 +173,10 @@ only screen and (        min-device-pixel-ratio: 1.25)      and (min-width: 700p
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 1.5)      and (min-width: 700px),
-only screen and (   min--moz-device-pixel-ratio: 1.5)      and (min-width: 700px),
-only screen and (     -o-min-device-pixel-ratio: 1.5/1)    and (min-width: 700px),
-only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px){ 
+only screen and (-webkit-min-device-pixel-ratio: 1.5)      and (min-width: 700px)  and (max-width: 2000px),
+only screen and (   min--moz-device-pixel-ratio: 1.5)      and (min-width: 700px)  and (max-width: 2000px),
+only screen and (     -o-min-device-pixel-ratio: 1.5/1)    and (min-width: 700px)  and (max-width: 2000px),
+only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px)  and (max-width: 2000px){ 
 
 
     .container.main_div{
