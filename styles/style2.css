@@ -378,7 +378,7 @@ only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px
     }
     header.masthead{
         margin-bottom: 2em;
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
     .post-max{
         padding: 4px;
@@ -436,14 +436,14 @@ only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px
     }
     header.masthead{
         margin-bottom: 2em;
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
     .post{
         /*max-width: 90%;*/
     }
     .post-max{
         padding: 4px;
-        font-size: 0.75em;
+        font-size: 0.78em;
     }
     .post-min{
         font-size: 11px;
