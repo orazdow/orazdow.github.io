@@ -424,35 +424,29 @@ only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px
 @media screen and (max-width: 360px) {
 
     .main_div{
-
-        max-width: 100%;
-        margin: 0 auto;
-        margin-right: 10%;
-        /*margin: 0 auto;*/
+        max-width: 88%;
         padding: 10px;
         z-index: 1;
         background: #ffffff;
         font-size: 14px;
-
     }
     .masthead-title a{
        /* font-size: 0.78em;*/
-       font-size: 0.56em;
+       font-size: 0.7em;
     }
     header.masthead{
         margin-bottom: 2em;
         margin-top: 1em;
     }
-    li{
-        margin: 0 auto;
-        margin-right: 25%;
+    .post{
+        /*max-width: 90%;*/
     }
     .post-max{
         padding: 4px;
         font-size: 0.75em;
     }
     .post-min{
-                font-size: 11px;
+        font-size: 11px;
         margin: 2px;
         padding-bottom: 3px;
         padding-top: 3px;
@@ -475,8 +469,8 @@ only screen and (        min-device-pixel-ratio: 1.5)      and (min-width: 700px
     }
     .spacer{
         margin: 0px;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 9px;
+        margin-right: 9px;
     }
     .anim pre{
         font-size: 9px;
