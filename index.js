@@ -5,17 +5,6 @@ import {App} from './components/App';
 
 
 
-// if(window.devicePixelRatio == 1.5 ){
- 	// document.documentElement.style.transform = 'scale('+0.75+')';
- 	// document.documentElement.style.transformOrigin = 'top center';
-// }
-
-// if(window.innerWidth > 700){
-// 	if(window.devicePixelRatio > 1 && (window.devicePixelRatio/.25)%1 == 0){
-
-// 	}
-// }
-
 function check_firefox(){
 	if(navigator.userAgent.indexOf('Firefox') > -1 ){		
 		let gh = document.querySelector("#ghbutton");

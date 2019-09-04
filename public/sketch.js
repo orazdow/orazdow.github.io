@@ -119,7 +119,7 @@ function ascii(){
 	}  disp.innerHTML = str; disp2.innerHTML = str; 
 }
 
-//check point with cross product
+//check point with determinant
 function inline(px,py,ax,ay,bx,by,e){
 	return ((px >= ax && px <= bx) || (px >= bx && px <= ax)) && 
 	((py >= ay && py <= by) || (py >= by && py <= ay)) && 

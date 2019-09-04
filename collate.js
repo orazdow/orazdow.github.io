@@ -37,7 +37,7 @@ readdirAsync('./posts').then((files)=>{
 
 		let entry = {
 			filename: el,
-			date:  str.substr(0, 10).replace(/[-]/g, '/'),
+			date: str.substr(0,4) == '0000' ? '' : str.substr(0, 10).replace(/[-]/g, '/'),
 			title: str.substr(0, str.lastIndexOf('-')).substr(11),
 			description: "",
 			content: "",
