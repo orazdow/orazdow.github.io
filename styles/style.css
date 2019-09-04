@@ -1,11 +1,16 @@
 /*#a123fe;*/
 html {
+  font-size: 16px;
 
 }
 
+/*#root{
+  font-size: 16px;
+}*/
+
 body {
-  /*font-size: 20px;*/
-  line-height: 1.5;
+/*  font-size: 20px;
+*/  line-height: 1.5;
   color: #000000;
   background-color: #fff;
   font-family: Helvetica,Arial,sans-serif;
@@ -30,7 +35,7 @@ a:active{
 }
 */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
+  margin-bottom: .3em;
   font-weight: bold;
   line-height: 1.25;
   color: #000000;
@@ -38,27 +43,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-top: 1em;
+  font-size: 1.5em;
 }
 
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+  margin-top: 1.2em;
+  font-size: 1.25em;
 }
 
 h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1em;
+  font-size: 1em;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 strong {
@@ -67,7 +72,7 @@ strong {
 
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 dt {
@@ -75,7 +80,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: .5em;
 }
 
 code,
@@ -91,9 +96,9 @@ code {
 
 pre {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   /*padding: 1rem;*/
-  font-size: .8rem;
+  font-size: .8em;
   /*line-height: 1.4;*/
 /*  background-color: #f9f9f9;*/
 }
@@ -105,10 +110,10 @@ pre code {
 }
 
 blockquote {
-  padding: .5rem 1rem;
+  padding: .5em 1em;
   margin: .8rem 0;
   color: #7a7a7a;
-  border-left: 0.25rem solid #e5e5e5;
+  border-left: 0.25em solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -119,14 +124,14 @@ img {
 }
 
 table {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
 table td,
 table th {
-  padding: .25rem .5rem;
+  padding: .25em .5em;
   border: 1px solid #e5e5e5;
 }
 table tr:nth-child(odd) td,
@@ -143,9 +148,9 @@ table tr:nth-child(odd) th {
 }
 
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 3em;
   margin-top: 22px;
 }
 .masthead .masthead-title {
@@ -176,8 +181,8 @@ table tr:nth-child(odd) th {
 }
 .post .post-date {
   display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
+  margin-top: -.5em;
+  margin-bottom: 1em;
 }
 
 .post-title,
